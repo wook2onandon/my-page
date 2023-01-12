@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(115, 115, 115);
+  position: relative;
+}
+
+.mainBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.textBox {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
