@@ -7,8 +7,7 @@ export default function Archiving({ elementRef }) {
       <div className={styles.title}>Archiving</div>
       <a className={styles.itemWrap} href="https://www.github.com/wook2onandon">
         <div className={styles.nameWrap}>
-          <img className={styles.nameImg} src="" alt="" />
-          <p>GitHub</p>
+          <img className={styles.nameImg} src="/images/github.png" alt="" />
         </div>
         <div className={styles.address}>github.com/wook2onandon</div>
         <div className={styles.textTitle}>

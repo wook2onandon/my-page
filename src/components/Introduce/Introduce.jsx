@@ -6,10 +6,10 @@ export default function Introduce() {
     <div className={styles.container}>
       <img className={styles.mainBg} src="/images/work.jpg" alt="" />
       <div className={styles.textBox}>
-        <h2>김종욱</h2>
-        <h2>웹 프론트엔드 포트폴리오</h2>
-        <div></div>
-        <p>
+        <h2 className={styles.title}>- 김종욱 -</h2>
+        <h2 className={styles.subTitle}>웹 프론트엔드 포트폴리오</h2>
+        <div className={styles.hr} />
+        <p className={styles.text}>
           안녕하세요.
           <br />
           항상 노력하는 웹 프론트엔드 개발자입니다.

@@ -12,10 +12,12 @@
 .title {
   color: #ffffff;
   border-bottom: 1px solid #6c757d;
+  font-size: 2.5rem;
+  font-weight: 600;
   padding: 20px;
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.5;
+  margin: 0 auto 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .itemWrap {
@@ -30,23 +32,22 @@
 }
 
 .nameWrap {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 30px;
+  margin: 30px 0 10px;
 }
 
 .nameImg {
-  width: 3rem;
-  height: 3rem;
+  width: 10rem;
+  /* height: 3rem; */
   object-fit: cover;
 }
 
 .address {
+  font-size: 1.5rem;
 }
 
 .textTitle {
   margin: 15px 0;
+  font-size: 1.2rem;
 }
 
 .textWrap {

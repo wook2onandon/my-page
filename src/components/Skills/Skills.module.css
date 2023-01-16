@@ -1,5 +1,68 @@
+.section {
+  background-color: #f9c51d;
+}
+
 .container {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(255, 211, 53);
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  height: 88rem;
+}
+
+.title {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 20px;
+  margin: 0 auto 3rem;
+  width: fit-content;
+}
+
+.listContainer {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  display: -ms-flexbox;
+  -webkit-flex-flow: column wrap;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-flow: column wrap;
+  -webkit-align-content: space-evenly;
+  align-content: space-evenly;
+  justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+  height: -moz-calc(100% - (7.5rem + 1px));
+  height: calc(100% - (7.5rem + 1px));
+}
+
+.listWrap {
+  flex-shrink: 0;
+  width: 17rem;
+  padding: 1.5rem;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+}
+
+.listWrap:hover {
+  transform: translate(0, 2%);
+  transition: 0.2s all;
+}
+
+.listTitle {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f4623a;
+}
+
+.listImg {
+  display: block;
+  width: 100%;
 }
