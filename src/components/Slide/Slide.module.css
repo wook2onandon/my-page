@@ -1,0 +1,54 @@
+.container {
+  width: 50%;
+}
+
+.slideWrap {
+  width: 100%;
+}
+
+.slideImg {
+  width: 100%;
+}
+
+/* :global .slick-prev {
+  left: 45%;
+  bottom: -18%;
+  top: auto;
+  transform: translate(-50%, 0);
+}
+
+:global .slick-next {
+  left: 55%;
+  bottom: -18%;
+  top: auto;
+  transform: translate(-50%, 0);
+} */
+
+:global .slick-prev:before {
+  color: black;
+}
+
+:global .slick-next:before {
+  color: black;
+}
+
+:global .slick-dots.slick-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+:global .slick-dots.slick-thumb li {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: black;
+}
+
+:global .slick-dots.slick-thumb li.slick-active {
+  background-color: #ed1c24;
+  width: 24px;
+}
