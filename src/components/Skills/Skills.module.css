@@ -66,3 +66,19 @@
   display: block;
   width: 100%;
 }
+
+@media (max-width: 992px) {
+  .container {
+    /* height: 125rem; */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 150rem;
+  }
+  .listContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,10 +28,13 @@
 }
 
 .menu {
+  width: 33.3333%;
+}
+
+.menuBox {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
-  /* width: 50%; */
-  width: 33.3333%;
   margin-bottom: 10px;
 }
 
@@ -66,4 +68,26 @@
   font-size: 1.2rem;
   text-align: left;
   margin: 10px 0;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .menuBox {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 14rem;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
 }

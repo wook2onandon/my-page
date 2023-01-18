@@ -98,3 +98,37 @@
   font-size: 1.2rem;
   list-style: disc;
 }
+
+@media (max-width: 992px) {
+  .logoContainer {
+    padding-right: 2rem;
+  }
+
+  .logoWrap {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .careerContainer {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .itemWrap {
+    flex-direction: column;
+    border: none;
+  }
+
+  .logoContainer {
+    padding-right: 0;
+    padding-bottom: 2rem;
+    border-right: none;
+  }
+
+  .logoWrap {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+  }
+}
