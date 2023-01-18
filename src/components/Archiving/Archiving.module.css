@@ -47,7 +47,7 @@
 
 .textTitle {
   margin: 15px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .textWrap {
@@ -60,4 +60,5 @@
 
 .text {
   margin: 0 0 1rem;
+  font-size: 1.2rem;
 }

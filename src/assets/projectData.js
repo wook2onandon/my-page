@@ -36,9 +36,12 @@ export const projectData = [
     deployment: 'Netlify',
     images: [
       '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
+      '/images/shoppy-admin.png',
+      '/images/shoppy-cart.png',
+      '/images/shoppy-login.png',
+      '/images/shoppy-product.png',
+      '/images/shoppy-productDetail.png',
+      '/images/shoppy-newProduct.png',
     ],
   },
   {
@@ -55,10 +58,10 @@ export const projectData = [
     database: '',
     deployment: 'Netlify',
     images: [
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
+      '/images/youtube-home.png',
+      '/images/youtube-detail.png',
+      '/images/youtube-responsive-main.png',
+      '/images/youtube-responsive.png',
     ],
   },
   {
@@ -75,10 +78,34 @@ export const projectData = [
     database: '',
     deployment: 'Netlify',
     images: [
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
-      '/images/shoppy-home.png',
+      '/images/todo-home.png',
+      '/images/todo-check.png',
+      '/images/todo-active.png',
+      '/images/todo-completed.png',
+      '/images/todo-darkmode.png',
     ],
+  },
+];
+
+export const skillsInfo = [
+  {
+    title: 'Frontend',
+    src: '/images/frontend.png',
+  },
+  {
+    title: 'Communication',
+    src: '/images/communication.png',
+  },
+  {
+    title: 'Version Control',
+    src: '/images/version-control.png',
+  },
+  {
+    title: 'Deployment',
+    src: '/images/deployment.png',
+  },
+  {
+    title: 'Backend',
+    src: '/images/backend.png',
   },
 ];

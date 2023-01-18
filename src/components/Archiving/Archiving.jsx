@@ -3,7 +3,7 @@ import styles from './Archiving.module.css';
 
 export default function Archiving({ elementRef }) {
   return (
-    <div ref={elementRef} className={styles.container}>
+    <article ref={elementRef} className={styles.container}>
       <div className={styles.title}>Archiving</div>
       <a className={styles.itemWrap} href="https://www.github.com/wook2onandon">
         <div className={styles.nameWrap}>
@@ -22,6 +22,6 @@ export default function Archiving({ elementRef }) {
           </li>
         </ul>
       </a>
-    </div>
+    </article>
   );
 }

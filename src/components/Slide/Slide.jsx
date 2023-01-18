@@ -33,6 +33,7 @@ export default function Slide({ slider }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     customPaging: function (i) {

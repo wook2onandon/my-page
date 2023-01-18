@@ -1,32 +1,10 @@
 import React from 'react';
+import { skillsInfo } from '../../assets/projectData';
 import styles from './Skills.module.css';
-
-const skillsInfo = [
-  {
-    title: 'Frontend',
-    src: '/images/frontend.png',
-  },
-  {
-    title: 'Communication',
-    src: '/images/communication.png',
-  },
-  {
-    title: 'Version Control',
-    src: '/images/version-control.png',
-  },
-  {
-    title: 'Deployment',
-    src: '/images/deployment.png',
-  },
-  {
-    title: 'Backend',
-    src: '/images/backend.png',
-  },
-];
 
 export default function Skills({ elementRef }) {
   return (
-    <section className={styles.section}>
+    <article className={styles.section}>
       <div className={styles.container} ref={elementRef}>
         <div className={styles.title}>SKILLS</div>
         <div className={styles.listContainer}>
@@ -44,6 +22,6 @@ export default function Skills({ elementRef }) {
           })}
         </div>
       </div>
-    </section>
+    </article>
   );
 }

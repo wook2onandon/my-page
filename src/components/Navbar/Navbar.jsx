@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
+import { FiArrowUp } from 'react-icons/fi';
 
 export default function Navbar({ goodsTabs }) {
   const [scrollTop, setScrollTop] = useState(false);
@@ -51,7 +52,9 @@ export default function Navbar({ goodsTabs }) {
       <div
         className={`${styles.upBtn} ${scrollTop && styles.activeUpBtn}`}
         onClick={handleScrollTop}
-      ></div>
+      >
+        <FiArrowUp className={styles.arrowBtn} />
+      </div>
     </>
   );
 }

@@ -46,10 +46,13 @@
 
 .projectTitle {
   text-align: center;
+  font-size: 2rem;
 }
 
 .projectSubTitle {
   text-align: center;
+  font-size: 1.8rem;
+  color: #585858;
 }
 
 .projectItemWrap {
@@ -93,6 +96,11 @@
   font-weight: 700;
   font-size: 1.2rem;
 }
+.projectDetail::before {
+  content: '✔';
+  display: inline;
+  padding-right: 0.5rem;
+}
 
 .projectDetailText {
   display: inline-block;
@@ -102,6 +110,13 @@
   font-weight: 400;
   font-size: 1.2rem;
   word-break: keep-all;
+}
+
+.projectDetailText a {
+  color: #258ddb;
+  cursor: pointer;
+  text-decoration: none;
+  word-break: break-all;
 }
 
 .btn {

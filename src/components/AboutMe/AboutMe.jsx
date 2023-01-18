@@ -3,7 +3,7 @@ import styles from './AboutMe.module.css';
 
 export default function AboutMe({ elementRef }) {
   return (
-    <div className={styles.container} ref={elementRef}>
+    <article className={styles.container} ref={elementRef}>
       <div className={styles.title}>ABOUT ME</div>
       <ul className={styles.menuList}>
         <li className={styles.menu}>
@@ -63,6 +63,6 @@ export default function AboutMe({ elementRef }) {
           </div>
         </li>
       </ul>
-    </div>
+    </article>
   );
 }

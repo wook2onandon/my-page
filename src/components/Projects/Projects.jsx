@@ -5,7 +5,7 @@ import styles from './Projects.module.css';
 
 export default function Projects({ elementRef }) {
   return (
-    <div ref={elementRef} className={styles.container}>
+    <article ref={elementRef} className={styles.container}>
       <div className={styles.title}>Project</div>
       <ul className={styles.listWrap}>
         {projectData.map((data) => {
@@ -31,12 +31,14 @@ export default function Projects({ elementRef }) {
                     <li className={styles.projectDetailWrap}>
                       <div className={styles.projectDetail}>GitHub</div>
                       <div className={styles.projectDetailText}>
-                        {data.github}
+                        <a href={data.github}>{data.github}</a>
                       </div>
                     </li>
                     <li className={styles.projectDetailWrap}>
                       <div className={styles.projectDetail}>url</div>
-                      <div className={styles.projectDetailText}>{data.url}</div>
+                      <div className={styles.projectDetailText}>
+                        <a href={data.url}>{data.url}</a>
+                      </div>
                     </li>
                     <li className={styles.projectDetailWrap}>
                       <div className={styles.projectDetail}>Frontend</div>
@@ -75,6 +77,6 @@ export default function Projects({ elementRef }) {
           );
         })}
       </ul>
-    </div>
+    </article>
   );
 }
