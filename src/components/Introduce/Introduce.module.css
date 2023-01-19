@@ -45,6 +45,22 @@
   font-family: 'Black Han Sans', sans-serif;
 }
 
+.subTitle::after {
+  content: '';
+  margin-left: 0.6rem;
+  border-right: 2px solid #777;
+  animation: cursor 0.9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #fff;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}
+
 .hr {
   width: 3.25rem;
   height: 0;

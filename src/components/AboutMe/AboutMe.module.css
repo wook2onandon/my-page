@@ -38,10 +38,17 @@
 }
 
 .menuBox {
-  width: 100%;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
+  display: -ms-flexbox;
+  -webkit-flex-flow: row nowrap;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 14rem;
+  margin: 0 auto;
   opacity: 0.8;
 }
 
@@ -76,6 +83,7 @@
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
+  word-break: keep-all;
 }
 
 @media (max-width: 992px) {

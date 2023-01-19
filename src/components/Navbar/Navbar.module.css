@@ -137,6 +137,10 @@
   cursor: pointer;
 }
 
+.menuMobile:hover {
+  color: #ed1c24;
+}
+
 .menuMobile:first-child {
   margin-top: 1rem;
 }

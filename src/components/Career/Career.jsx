@@ -65,7 +65,7 @@ export default function Career({ elementRef }) {
                 ▎쇼핑몰 구축(프론트엔드 전반) 및 관리
               </h4>
               <h5 className={styles.careerListPeriod}>
-                2023년 4월 - 2022년 7월{' '}
+                2022년 4월 - 2022년 7월{' '}
               </h5>
               <li>온닥 사이트 구축(원데이넷)</li>
               <li>리큐젠 사이트 구축(카페24)</li>

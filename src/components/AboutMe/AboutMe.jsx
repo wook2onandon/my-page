@@ -78,9 +78,9 @@ export default function AboutMe({ elementRef }) {
             <div className={styles.menuItem}>
               <h4 className={styles.menuTitle}>학력</h4>
               <p className={styles.menuText}>
-                건국대학교 글로컬캠퍼스
+                건국대학교(글로컬)
                 <br />
-                (패션디자인학부)
+                패션디자인학부
               </p>
             </div>
           </div>

@@ -104,7 +104,7 @@ export default function Navbar({ goodsTabs }) {
         )}
       </div>
       <div
-        className={`${styles.upBtn} ${scrollTop && styles.activeUpBtn}`}
+        className={`${styles.upBtn} ${!scrollTop && styles.activeUpBtn}`}
         onClick={handleScrollTop}
       >
         <FiArrowUp className={styles.arrowBtn} />
