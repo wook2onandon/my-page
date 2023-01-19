@@ -36,8 +36,15 @@
   margin: 0 auto;
 }
 
+.itemWrap:hover {
+  transform: translate(0, 2%);
+  transition: 0.2s all;
+}
+
 .nameWrap {
-  margin: 30px 0 10px;
+  display: block;
+  width: 12rem;
+  margin-bottom: 1rem;
 }
 
 .nameImg {
@@ -47,25 +54,29 @@
 }
 
 .address {
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #258ddb;
 }
 
 .textTitle {
   margin: 15px 0;
   font-size: 1.4rem;
+  color: #444;
 }
 
 .textWrap {
+  color: #444;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 1rem;
 }
 
 .text {
   margin: 0 0 1rem;
-  font-size: 1.2rem;
+  list-style: disc;
 }
 
 @media (max-width: 992px) {

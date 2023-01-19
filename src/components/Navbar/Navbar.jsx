@@ -2,19 +2,29 @@ import React, { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import { FiArrowUp } from 'react-icons/fi';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { useMediaQuery } from 'react-responsive';
+import { debounce } from 'lodash';
 
 export default function Navbar({ goodsTabs }) {
   const [scrollTop, setScrollTop] = useState(true);
   const [openHamburger, setOpenHamburger] = useState(false);
-  const isDesktop = useMediaQuery({ minDeviceWidth: 1000 });
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener('scroll', handleScroll); //clean up
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const handleResize = debounce(() => {
+    if (window.innerWidth < 1000) {
+      setIsDesktop(false);
+    } else {
+      setIsDesktop(true);
+    }
+  }, 500);
 
   const handleScroll = () => {
     if (window.scrollY >= 50) {

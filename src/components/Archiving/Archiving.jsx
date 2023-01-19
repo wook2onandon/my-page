@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from '../Title/Title';
 import styles from './Archiving.module.css';
 
 export default function Archiving({ elementRef }) {
   return (
     <article ref={elementRef} className={styles.container}>
       <div className={styles.wrap}>
-        <div className={styles.title}>Archiving</div>
+        <Title font="ARCHIVING" lineColor="#6c757d" color="#fff" />
         <a
           className={styles.itemWrap}
           href="https://www.github.com/wook2onandon"
@@ -19,10 +20,10 @@ export default function Archiving({ elementRef }) {
           </div>
           <ul className={styles.textWrap}>
             <li className={styles.text}>
-              - 과거 프로젝트, 프로그램, 앱의 소스 코드
+              과거 프로젝트, 프로그램, 앱의 소스 코드
             </li>
             <li className={styles.text}>
-              - 혼자서 코딩 연습을 위해 끄적이던 소스 코드
+              혼자서 코딩 연습을 위해 끄적이던 소스 코드
             </li>
           </ul>
         </a>

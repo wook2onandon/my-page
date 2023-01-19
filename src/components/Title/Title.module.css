@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  margin: 0 auto 3rem;
+  width: fit-content;
+}
+
+.text {
+  font-family: 'Black Han Sans', sans-serif;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}

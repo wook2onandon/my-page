@@ -1,13 +1,14 @@
 import React from 'react';
 import { projectData } from '../../assets/projectData';
 import Slide from '../Slide/Slide';
+import Title from '../Title/Title';
 import styles from './Projects.module.css';
 
 export default function Projects({ elementRef }) {
   return (
     <article ref={elementRef} className={styles.container}>
       <div className={styles.wrap}>
-        <div className={styles.title}>Project</div>
+        <Title font="PROJECTS" lineColor="#ccc" color="#fff" />
         <ul className={styles.listWrap}>
           {projectData.map((data) => {
             return (
@@ -20,7 +21,7 @@ export default function Projects({ elementRef }) {
                   <Slide slider={data.images} />
                   <div className={styles.projectBox}>
                     <p className={styles.projectTextDetail}>{data.detail}</p>
-                    <button className={styles.btn}>자세히보기</button>
+                    <button className={styles.btn}>자세히 보기 ▶ README</button>
                     <div className={styles.hr} />
                     <ul className={styles.projectDetailList}>
                       <li className={styles.projectDetailWrap}>

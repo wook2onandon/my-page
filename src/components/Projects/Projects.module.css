@@ -47,14 +47,21 @@
 }
 
 .projectTitle {
+  padding-bottom: 0.5rem;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #222;
   text-align: center;
-  font-size: 2rem;
 }
 
 .projectSubTitle {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6c757d;
   text-align: center;
-  font-size: 1.8rem;
-  color: #585858;
+  opacity: 0.8;
 }
 
 .projectItemWrap {
@@ -83,7 +90,8 @@
 }
 
 .projectTextDetail {
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1rem;
   word-break: keep-all;
 }
 
@@ -95,8 +103,8 @@
   display: inline-block;
   vertical-align: top;
   width: 8.4rem;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 900;
+  font-size: 1rem;
 }
 .projectDetail::before {
   content: '✔';
@@ -110,7 +118,7 @@
   width: -moz-calc(100% - 8.4rem);
   width: calc(100% - 8.4rem);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   word-break: keep-all;
 }
 
@@ -129,6 +137,7 @@
   color: #fff;
   cursor: pointer;
   margin: 1rem 0 0;
+  font-size: 1rem;
 }
 
 .hr {

@@ -57,21 +57,20 @@
 
 .careerTitle {
   padding-bottom: 0.5rem;
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .careerPeriod {
   padding-bottom: 1rem;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #6c757d;
 }
 
 .careerDescription {
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
-  font-size: 1.5rem;
   word-break: keep-all;
 }
 
@@ -82,20 +81,19 @@
 
 .careerListTitle {
   margin: 2rem 0 1rem -1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #222;
 }
 
 .careerListPeriod {
   margin: 0 0 1rem -1rem;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #6c757d;
 }
 
 .careerListWrap li {
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
   list-style: disc;
 }
 

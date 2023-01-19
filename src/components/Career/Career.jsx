@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from '../Title/Title';
 import styles from './Career.module.css';
 
 export default function Career({ elementRef }) {
   return (
     <article ref={elementRef} className={styles.container}>
       <div className={styles.wrap}>
-        <div className={styles.title}>Career</div>
+        <Title font="CAREER" lineColor="#000" color="#000" />
         <div className={styles.itemWrap}>
           <div className={styles.logoContainer}>
             <div className={styles.logoWrap}>
@@ -22,8 +23,9 @@ export default function Career({ elementRef }) {
             <div className={styles.careerDescription}>
               다양한 라이브커머스를 하나의 플랫폼에서 시청가능하며
               <b>
+                {' '}
                 쇼호스트들과 라이브커머스에 참여하고 싶은 기업들을 매칭,
-                라이브커머스 제작대행까지하는 플랫폼입니다.
+                라이브커머스 제작대행까지하는 플랫폼입니다.{' '}
               </b>
               또한 온닥,리큐젠 등 다양한 쇼핑몰 채널도 운영하는 회사입니다.
               <br />
