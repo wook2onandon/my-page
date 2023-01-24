@@ -1,10 +1,21 @@
 import React from 'react';
+import { useState } from 'react';
 import { projectData } from '../../assets/projectData';
+import FullScreenDialog from '../FullScreenDialog/FullScreenDialog';
 import Slide from '../Slide/Slide';
 import Title from '../Title/Title';
 import styles from './Projects.module.css';
 
 export default function Projects({ elementRef }) {
+  const [modalOn, setModalOn] = useState(false);
+  const [projectNum, setProjectNum] = useState(0);
+
+  const handleModal = (num) => {
+    if (num) {
+      setProjectNum(num);
+    }
+    setModalOn((prev) => !prev);
+  };
   return (
     <article ref={elementRef} className={styles.container}>
       <div className={styles.wrap}>
@@ -21,7 +32,12 @@ export default function Projects({ elementRef }) {
                   <Slide slider={data.images} />
                   <div className={styles.projectBox}>
                     <p className={styles.projectTextDetail}>{data.detail}</p>
-                    <button className={styles.btn}>자세히 보기 ▶ README</button>
+                    <button
+                      className={styles.btn}
+                      onClick={() => handleModal(data.id)}
+                    >
+                      자세히 보기 ▶ README
+                    </button>
                     <div className={styles.hr} />
                     <ul className={styles.projectDetailList}>
                       <li className={styles.projectDetailWrap}>
@@ -80,6 +96,13 @@ export default function Projects({ elementRef }) {
           })}
         </ul>
       </div>
+      {modalOn && (
+        <FullScreenDialog
+          handleModal={handleModal}
+          project={projectData[projectNum].readme}
+          num={projectNum}
+        />
+      )}
     </article>
   );
 }

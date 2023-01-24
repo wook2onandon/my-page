@@ -6,10 +6,6 @@ function useMoveScroll(name) {
   const onMoveToElement = () => {
     let scrollY =
       element.current.getBoundingClientRect().top - 72 + window.pageYOffset;
-    // element.current?.scrollIntoView({
-    //   behavior: 'smooth',
-    //   block: 'start',
-    // });
     window.scrollTo({
       left: 0,
       top: scrollY,
