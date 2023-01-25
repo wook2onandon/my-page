@@ -9,7 +9,8 @@
 .slideImg {
   width: 100%;
   object-fit: contain;
-  max-height: 280px;
+  height: 280px;
+  /* max-height: 280px; */
 }
 
 /* :global .slick-prev {

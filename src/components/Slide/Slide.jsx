@@ -34,6 +34,7 @@ export default function Slide({ slider }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    lazyLoad: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     customPaging: function (i) {
@@ -48,7 +49,11 @@ export default function Slide({ slider }) {
         {slider.map((slide, index) => {
           return (
             <div key={index}>
-              <img src={slide} alt="" className={styles.slideImg} />
+              <img
+                src={slide}
+                alt="project image"
+                className={styles.slideImg}
+              />
             </div>
           );
         })}
