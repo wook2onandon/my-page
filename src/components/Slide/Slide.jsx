@@ -49,11 +49,7 @@ export default function Slide({ slider }) {
         {slider.map((slide, index) => {
           return (
             <div key={index}>
-              <img
-                src={slide}
-                alt="project image"
-                className={styles.slideImg}
-              />
+              <img src={slide} alt="project" className={styles.slideImg} />
             </div>
           );
         })}
