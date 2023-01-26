@@ -3,11 +3,13 @@ import styles from './Navbar.module.css';
 import { FiArrowUp } from 'react-icons/fi';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { debounce } from 'lodash';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Navbar({ goodsTabs }) {
   const [scrollTop, setScrollTop] = useState(true);
   const [openHamburger, setOpenHamburger] = useState(false);
   const [isDesktop, setIsDesktop] = useState(true);
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1000 });
 
   useEffect(() => {
     const handleResize = debounce(() => {
@@ -17,14 +19,16 @@ export default function Navbar({ goodsTabs }) {
         setIsDesktop(true);
       }
     }, 200);
-
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
+    if (isTabletOrMobile) {
+      setIsDesktop(false);
+    }
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isTabletOrMobile]);
 
   const handleScroll = () => {
     if (window.scrollY >= 50) {
