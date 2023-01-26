@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { BsGithub, BsInstagram, BsFacebook } from 'react-icons/bs';
+import { RxNotionLogo } from 'react-icons/rx';
 
 export default function Footer() {
   return (
@@ -28,6 +29,14 @@ export default function Footer() {
             href="https://www.facebook.com/wook2onandon"
           >
             <BsFacebook className={styles.icon} />
+          </a>
+        </li>
+        <li className={styles.list}>
+          <a
+            className={styles.iconWrap}
+            href="https://grave-jute-6f6.notion.site/WOOK-s-Portfolio-a465e17624d141378fdc4b8effba7d78"
+          >
+            <RxNotionLogo className={styles.icon} />
           </a>
         </li>
       </ul>
