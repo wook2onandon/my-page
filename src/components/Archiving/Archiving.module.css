@@ -9,6 +9,13 @@
   margin: 0 auto;
 }
 
+.listWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .title {
   color: #ffffff;
   border-bottom: 1px solid #6c757d;
@@ -83,6 +90,11 @@
   .itemWrap {
     width: 100%;
     max-width: 30rem;
+  }
+
+  .listWrap {
+    flex-direction: column;
+    gap: 3rem;
   }
 }
 
