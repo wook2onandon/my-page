@@ -37,7 +37,7 @@
 }
 
 .subTitle {
-  margin: 30px 0 0;
+  margin: 2rem 0 0;
   font-weight: 400;
   font-size: 4rem;
   color: #fff;
@@ -76,6 +76,7 @@
   font-size: 1.25rem;
   color: hsla(0, 0%, 100%, 0.75);
   line-height: 1.5;
+  word-break: keep-all;
 }
 
 @media (max-width: 992px) {
@@ -84,11 +85,26 @@
   }
 
   .subTitle {
-    margin: 15px 0 0;
+    margin: 1rem 0 0;
     font-size: 1.8rem;
   }
 
   .text {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .subTitle {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
   }
 }
