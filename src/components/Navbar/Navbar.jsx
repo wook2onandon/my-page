@@ -16,7 +16,7 @@ export default function Navbar({ goodsTabs }) {
       } else {
         setIsDesktop(true);
       }
-    }, 500);
+    }, 200);
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
